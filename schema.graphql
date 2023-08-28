@@ -1,0 +1,12 @@
+type Transfer @entity {
+  id: ID!
+  from: String! @index
+  to: String! @index
+  value: BigInt! @index
+  timestamp: DateTime!
+}
+
+type EarlyVestedCumulative @entity {
+  id: ID!
+  amountSentToTreasury: BigInt! @index
+}
